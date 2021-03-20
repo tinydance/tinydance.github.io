@@ -242,7 +242,7 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #d7994de3;
+    background: #cc0000;
     padding: 15px 0px;
 	
 	box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
@@ -320,12 +320,12 @@ p {
 }
 
 .navStyle ul li a:hover {
-    color: #ed4194e0;
+    color: black;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #ed4194e0;
+    color: black;
     background-color: transparent;
 }
 
@@ -335,7 +335,7 @@ p {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #ed4194e0;
+    color: black;
     background-color: transparent;
     border-radius: 4px;
 }
@@ -343,7 +343,7 @@ p {
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
-    color: #ed4194e0;
+    color: black;
     background-color: transparent;
 }
 
@@ -364,7 +364,7 @@ p {
   text-align: center;
 }
 #head {
-  background: #f4f4f4 url(../img/heading.jpg) top center;
+  background: #f4f4f4 url("../img/heading.jpg") top center;
   background-size: cover;
   color: #7C7C7C;
   padding: 120px 0;
@@ -542,7 +542,7 @@ div#main-nav {
 
 #service {
     padding: 60px 0px;
-    background: #ed4194a8;
+    background: #696969;
 }
 #service h2{
   color: #fff;
@@ -611,7 +611,90 @@ color:#fff;
     color: #fff;
     margin: 0 0 35px 0; 
 }
-	
+
+/* Introduction
+---------------------------------*/
+
+#intro {
+    padding: 60px 0px;
+    background: white;
+}
+#intro h2{
+    color: black;
+
+}
+#intro h4{
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+#intro ul{
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.intro_wrapper {
+    padding: 40px 0 40px;
+}
+
+.intro_section {
+}
+
+.intro_block {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.intro_icon {
+    width: 90px;
+    height: 85px;
+    margin: 0px auto 25px;
+}
+
+
+
+.intro_icon span {
+    background: transparent;
+    display: block;
+    height: 95px;
+    width: 95px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 6px 0 0;
+}
+
+.intro_icon i {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+    display: block;
+    text-align: center;
+}
+
+.intro_block h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin: 35px 0 15px;
+}
+#intro h6{
+    color:#fff;
+}
+.intro_block p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 35px 0;
+}
 
 
 /* Latest Work
