@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 175.34177 28.586561"
+   height="28.586561mm"
+   width="175.34177mm"
+   sodipodi:docname="DanceMuse.svg">
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1347"
+       x="-0.049225543"
+       width="1.0984511"
+       y="-0.39250895"
+       height="1.7850178">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.950805"
+         id="feGaussianBlur1349" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter855"
+       x="-0.0017059979"
+       width="1.003412"
+       y="-0.012422449"
+       height="1.0248449">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.12092524"
+         id="feGaussianBlur857" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1012"
+       x="-0.0028831363"
+       width="1.0057663"
+       y="-0.020993939"
+       height="1.0419879">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.20436366"
+         id="feGaussianBlur1014" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1026"
+       x="-0.01535398"
+       width="1.030708"
+       y="-0.11180204"
+       height="1.2236041">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0883272"
+         id="feGaussianBlur1028" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     scale-x="10"
+     inkscape:pagecheckerboard="false"
+     units="mm"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g1588"
+     inkscape:document-units="cm"
+     inkscape:cy="38.859013"
+     inkscape:cx="301.73395"
+     inkscape:zoom="1.4"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       dotted="true"
+       id="grid10"
+       type="xygrid"
+       originx="-4.4876303"
+       originy="-61.241844" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(-4.4876302,-61.24184)">
+    <g
+       id="g1588">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:32.5488px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:0.610289;filter:url(#filter1012)"
+         x="5.5103235"
+         y="85.585938"
+         id="text833"><tspan
+           sodipodi:role="line"
+           id="tspan831"
+           x="5.5103235"
+           y="85.585938"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ffffff;stroke:#ff0000;stroke-width:0.610289">Dance Muse</tspan><tspan
+           sodipodi:role="line"
+           x="5.5103235"
+           y="126.58675"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ffffff;stroke:#ff0000;stroke-width:0.610289"
+           id="tspan835" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:32.5488px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:0.610289;filter:url(#filter1026)"
+         x="5.5103235"
+         y="86.644272"
+         id="text1020"><tspan
+           sodipodi:role="line"
+           id="tspan1016"
+           x="5.5103235"
+           y="86.644272"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ffffff;stroke:#ff0000;stroke-width:0.610289">Dance Muse</tspan><tspan
+           sodipodi:role="line"
+           x="5.5103235"
+           y="127.64508"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ffffff;stroke:#ff0000;stroke-width:0.610289"
+           id="tspan1018" /></text>
+    </g>
+  </g>
+</svg>
