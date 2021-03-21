@@ -19,7 +19,7 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 a, a:hover, a:active {
@@ -378,6 +378,7 @@ p {
 .text-center {
   text-align: center;
 }
+
 #head {
   background: #f4f4f4 url("../img/heading.jpg") top center;
   background-size: cover;
@@ -490,16 +491,16 @@ height: 650px;
 }
 
 .top_left_cont p {
-font-size: 18px;
-color: #FFFFFF;
-margin: 0 0 30px 0;
-line-height: 33px;
-text-align: center;
-font-weight: normal;
-font-size: 20px;
-/* font-weight: 300; */
-text-align: center;
-letter-spacing: 1px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+    line-height: 33px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    /* font-weight: 300; */
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 a.read_more, a.read_more2 {
@@ -601,14 +602,14 @@ div#main-nav {
 }
 
 .service_icon i {
-  color: #FFFFFF;
-font-size: 40px;
-margin-top: 0;
-position: relative;
-top: 20px;
-z-index: 20;
-display: block;
-text-align: center;
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+    display: block;
+    text-align: center;
 }
 
 .service_block h3 {
@@ -616,181 +617,37 @@ text-align: center;
     font-weight: 600;
     font-size: 25px;
     color: #fff;
-margin: 35px 0 15px; 
+    margin: 35px 0 15px;
 }
 #service h6{
-color:#fff;
+    color:#fff;
 }
 .service_block p {
     font-size: 16px;
     color: #fff;
     margin: 0 0 35px 0; 
 }
-
-/* Introduction
----------------------------------*/
-
-#intro {
+/* white box*/
+section.white_box {
     padding: 60px 0px;
     background: white;
+    color: black
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px;
 }
-#intro h2{
-    color: black;
-
+.white_box ul {
+    line-height: 40px;
 }
-#intro h4{
+.white_box h4 {
     color: black;
     font-family: sans-serif;
     text-align: center;
     line-height: 30px;
 }
 
-#intro ul{
-    color: black;
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.intro_wrapper {
-    padding: 40px 0 40px;
-}
-
-.intro_section {
-}
-
-.intro_block {
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-}
-
-.intro_icon {
-    width: 90px;
-    height: 85px;
-    margin: 0px auto 25px;
-}
 
 
-.intro_icon span {
-    background: transparent;
-    display: block;
-    height: 95px;
-    width: 95px;
-
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
-    padding: 6px 0 0;
-}
-
-.intro_icon i {
-    color: #FFFFFF;
-    font-size: 40px;
-    margin-top: 0;
-    position: relative;
-    top: 20px;
-    z-index: 20;
-    display: block;
-    text-align: center;
-}
-
-.intro_block h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: #fff;
-    margin: 35px 0 15px;
-}
-#intro h6{
-    color:#fff;
-}
-.intro_block p {
-    font-size: 16px;
-    color: #fff;
-    margin: 0 0 35px 0;
-}
-
-/* background
----------------------------------*/
-#background {
-    padding: 60px 0px;
-    background: white;
-}
-#background h2{
-    color: black;
-
-}
-#background h4{
-    color: black;
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 30px;
-}
-
-#background ul{
-    color: black;
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 40px;
-}
-.background_wrapper {
-    padding: 40px 0 40px;
-}
-
-.background_section {
-}
-
-.background_block {
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-}
-
-.background_icon {
-    width: 90px;
-    height: 85px;
-    margin: 0px auto 25px;
-}
-
-
-.background_icon span {
-    background: transparent;
-    display: block;
-    height: 95px;
-    width: 95px;
-
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
-    padding: 6px 0 0;
-}
-
-.background_icon i {
-    color: #FFFFFF;
-    font-size: 40px;
-    margin-top: 0;
-    position: relative;
-    top: 20px;
-    z-index: 20;
-    display: block;
-    text-align: center;
-}
-
-.background_block h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: #fff;
-    margin: 35px 0 15px;
-}
-#background h6{
-    color:#fff;
-}
-.background_block p {
-    font-size: 16px;
-    color: #fff;
-    margin: 0 0 35px 0;
-}
 /* Latest Work
 ---------------------------------*/
 
