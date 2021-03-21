@@ -274,6 +274,14 @@ p {
   width: 25%;
 }
 
+/* intersection image */
+.intersection {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
 /* Nav Styles
 ---------------------------------*/
 .navbar-inverse {
@@ -664,7 +672,6 @@ color:#fff;
 }
 
 
-
 .intro_icon span {
     background: transparent;
     display: block;
@@ -703,7 +710,87 @@ color:#fff;
     margin: 0 0 35px 0;
 }
 
+/* background
+---------------------------------*/
+#background {
+    padding: 60px 0px;
+    background: white;
+}
+#background h2{
+    color: black;
 
+}
+#background h4{
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+#background ul{
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+.background_wrapper {
+    padding: 40px 0 40px;
+}
+
+.background_section {
+}
+
+.background_block {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.background_icon {
+    width: 90px;
+    height: 85px;
+    margin: 0px auto 25px;
+}
+
+
+.background_icon span {
+    background: transparent;
+    display: block;
+    height: 95px;
+    width: 95px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 6px 0 0;
+}
+
+.background_icon i {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+    display: block;
+    text-align: center;
+}
+
+.background_block h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin: 35px 0 15px;
+}
+#background h6{
+    color:#fff;
+}
+.background_block p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 35px 0;
+}
 /* Latest Work
 ---------------------------------*/
 
