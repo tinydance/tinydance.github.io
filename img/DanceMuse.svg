@@ -10,25 +10,12 @@
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 211.58606 43.121098"
-   height="43.121098mm"
-   width="211.58606mm"
+   viewBox="0 0 182.39993 35.644726"
+   height="35.644726mm"
+   width="182.39993mm"
    sodipodi:docname="DanceMuse.svg">
   <defs
      id="defs2">
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter1325"
-       x="-0.0067524752"
-       width="1.013505"
-       y="-0.053842109"
-       height="1.1076843">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.54194856"
-         id="feGaussianBlur1327" />
-    </filter>
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
@@ -42,6 +29,32 @@
          stdDeviation="3.950805"
          id="feGaussianBlur1349" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter859"
+       x="-0.0033437556"
+       width="1.0066875"
+       y="-0.024347998"
+       height="1.048696">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.23701348"
+         id="feGaussianBlur861" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter877"
+       x="-0.036098912"
+       width="1.0721978"
+       y="-0.26285902"
+       height="1.525718">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.5587782"
+         id="feGaussianBlur879" />
+    </filter>
   </defs>
   <sodipodi:namedview
      scale-x="10"
@@ -49,11 +62,11 @@
      units="mm"
      showgrid="true"
      inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1588"
      inkscape:document-units="cm"
-     inkscape:cy="82.940228"
-     inkscape:cx="306.97716"
-     inkscape:zoom="0.98994949"
+     inkscape:cy="37.662631"
+     inkscape:cx="277.515"
+     inkscape:zoom="1.4"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -73,8 +86,8 @@
        dotted="true"
        id="grid10"
        type="xygrid"
-       originx="0.79302957"
-       originy="-52.439451" />
+       originx="-0.95854461"
+       originy="-57.712757" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -92,7 +105,7 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1"
-     transform="translate(0.79302961,-52.439449)">
+     transform="translate(-0.95854457,-57.712758)">
     <g
        id="g1588">
       <text
@@ -105,15 +118,15 @@
            id="tspan831"
            x="5.5103235"
            y="85.585938"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ff0000;stroke-width:0.610289">Dance Muse</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ff0000;stroke-width:0.610289">Dance Muse</tspan><tspan
            sodipodi:role="line"
            x="5.5103235"
-           y="126.27194"
-           style="font-size:32.5487px;fill:#ff0000;stroke-width:0.610289"
+           y="126.58675"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ff0000;stroke-width:0.610289"
            id="tspan835" /></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:32.5488px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter1325)"
+         style="font-style:normal;font-weight:normal;font-size:32.5488px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter859)"
          x="5.5103202"
          y="85.585938"
          id="text1179"><tspan
@@ -121,28 +134,28 @@
            id="tspan1175"
            x="5.5103202"
            y="85.585938"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Dance Muse</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Dance Muse</tspan><tspan
            sodipodi:role="line"
            x="5.5103202"
-           y="126.27194"
+           y="126.58675"
            style="font-size:32.5487px;fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
            id="tspan1177" /></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:32.5488px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter1347)"
-         x="5.5103183"
-         y="85.585938"
-         id="text1333"><tspan
+         style="font-style:normal;font-weight:normal;font-size:32.5488px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter877)"
+         x="5.5103202"
+         y="86.644272"
+         id="text867"><tspan
            sodipodi:role="line"
-           id="tspan1329"
-           x="5.5103183"
-           y="85.585938"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.5487px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Dance Muse</tspan><tspan
+           id="tspan863"
+           x="5.5103202"
+           y="86.644272"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32.5487px;font-family:Clip;-inkscape-font-specification:Clip;fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Dance Muse</tspan><tspan
            sodipodi:role="line"
-           x="5.5103183"
-           y="126.27194"
+           x="5.5103202"
+           y="127.64508"
            style="font-size:32.5487px;fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-           id="tspan1331" /></text>
+           id="tspan865" /></text>
     </g>
   </g>
 </svg>
