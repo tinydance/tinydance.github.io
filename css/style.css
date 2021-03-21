@@ -265,7 +265,14 @@ p {
 .res-nav_click {
     display: none;
 }
-	
+
+/* DanceMuse image */
+.dancemuse {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
 
 /* Nav Styles
 ---------------------------------*/
