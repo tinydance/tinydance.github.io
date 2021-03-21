@@ -129,21 +129,21 @@
       <div class="service_wrapper" , style="text-align:center">
         <div class="row" , style="text-align:center">
           <div class="col-md-4">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i
-                    class="fa fa-building-o"></i></span> </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">Backend Computing</h3>
-              <p class="animated fadeInDown wow">Adapt and deploy a state-of-the-art dance generation model to create
-                long and expressive dance sequences. </p>
-            </div>
-          </div>
-          <div class="col-md-4">
             <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i
                     class="fa fa-crosshairs"></i></span> </div>
             <div class="service_block">
               <h3 class="animated fadeInUp wow">Dataset Collection</h3>
               <p class="animated fadeInDown wow">Compile unique datasets embodying various dance styles, genres of music,
                 and actual dancers.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i
+                    class="fa fa-building-o"></i></span> </div>
+            <div class="service_block">
+              <h3 class="animated fadeInUp wow">Backend Computing</h3>
+              <p class="animated fadeInDown wow">Adapt and deploy a state-of-the-art dance generation model to create
+                long and expressive dance sequences. </p>
             </div>
           </div>
           <div class="col-md-4">
@@ -166,22 +166,65 @@
     <div class="container">
       <div class="row">
         <h2>Music to Dance - An Overview</h2>
-          <img src="img/music-to-dance-overview.jpg">
-          <p>Just like any other machine learning model, an input dataset is required
-            to be fed into the model. There
-            are two parts of the preprocessed dataset here: one is the pose extraction, where tools such as OpenPose
-            can be used to extract human body movements from video as key joints. As for the audio, there are packages
-            like librosa and essentia to extract music features, such as the music beats matching and mel frequency
-            cepstral coefficients, also known as MFCCs. These two parts of the dataset are then sent to a deep
-            learning model to learn the relationship between the audio and the poses, which can broadly be viewed as
-            treating the music as features and the poses as labels. Once the model is trained, given a new piece of
-            music, the model is able to generate a smooth, natural-looking, style-consistent, and beat-matching dance.
-            Our challenge then becomes creating a model that incorporates this AND allows for interaction with an
-            artist.</p>
+        <img src="img/music-to-dance-overview.jpg">
+        <p>Just like any other machine learning model, an input dataset is required
+          to be fed into the model. There
+          are two parts of the preprocessed dataset here: one is the pose extraction, where tools such as OpenPose
+          can be used to extract human body movements from video as key joints. As for the audio, there are packages
+          like librosa and essentia to extract music features, such as the music beats matching and mel frequency
+          cepstral coefficients, also known as MFCCs. These two parts of the dataset are then sent to a deep
+          learning model to learn the relationship between the audio and the poses, which can broadly be viewed as
+          treating the music as features and the poses as labels. Once the model is trained, given a new piece of
+          music, the model is able to generate a smooth, natural-looking, style-consistent, and beat-matching dance.
+          Our challenge then becomes creating a model that incorporates this AND allows for interaction with an
+          artist.</p>
       </div>
     </div>
   </section>
   <!--Music to Dance-->
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray;width:80%">
+  <!--DR_Explained-->
+  <section id="DR_explained">
+    <div class="container">
+      <div class="row">
+        <h2 style="padding-top: 20px;">Deep Learning for Generating Dance</h2>
+        <p>Our project builds off a pre-developed machine learning model named DanceRevolution (paper <a
+                href="https://arxiv.org/abs/2006.06119" target="_blank">here</a>) as the basis for our system. DanceRevolution uses an
+          encoder-decoder architecture; at a high level, the encoder learns to 'store' music information in a lower
+          dimensional space, and the decoder learns a mapping from the encoded coordinates into dance positions.</p>
+        <figure>
+          <img src="img/dance-revolution-arch.jpg" style="width:70%" class="center">
+          <figcaption style="text-align: center">Overview of Model Architecture, from <a
+                  href="https://arxiv.org/abs/2006.06119" target="_blank">DanceRevolution</a></figcaption>
+        </figure>
+        <h3>Encoding</h3>
+        <p> The music is encoded using a transformer with k-nearest neighbors self attention. Self attention means that
+          at every timestep, the model is able to look at the music features before and after in time to determine the
+          encoding for the current music timestep. K-nearest neighbors refers to how far into the past or the future
+          the model can look into. Self attention is great for this type of project because it allows the network to
+          learn about relationships between music features across time while also considering the effects one time step
+          has on another (much like in NLP where past and future words can dictate the meaning of the current word).
+        </p><br>
+        <h3>Decoding</h3>
+        <p>Historically, the issue with autoregressive decoders for generating dance has been the error accumulation
+          caused by exposure bias. Generative dance models are trained on dance poses from the provided ground-truth
+          poses, but at inference time, the decoder must predict a new pose based on the previous pose, which was also
+          predicted. Essentially, the model is not exposed to its own prediction errors during training, so as a result,
+          the biases of the predicted motion at each time-step during inference time will accumulate through the dance
+          sequence. Since a 1-minute long dance sequence at 30 FPS is composed of 1800 different poses, the error
+          accumulation can be quite severe.</p><br>
+        <p>What attracted us to Dance Revolution was its curriculum learning strategy to alleviate this exposure bias
+          problem. During training, this strategy gradually transitions a fully guided teacher-forcing scheme, which
+          means that the decoder predicts using the ground-truth poses, into an autoregressive scheme, where the decoder
+          predicts off its own prediction at the previous time-step. The right hand side of this diagram shows that the
+          input dance sequence that the model is trained on alternates between ground-truth sub-sequences and auto
+          regressively predicted sub-sequences, which increase in length over the course of training to gradually
+          minimize exposure bias. This strategy allows for longer length dance generation, compared to older models
+          whose output would freeze after a few seconds.</p>
+      </div>
+    </div>
+  </section>
+  <!--DR_Explained-->
 
   <!-- Portfolio -->
   <section id="Portfolio" class="content">
@@ -448,7 +491,9 @@
             <div class="col-md-5">
               <h3>Yuval Epstain Ofek</h3>
               <p>I am a senior electrical engineering student at the Cooper Union concurrently working towards a
-                master’s degree. I love signal processing, mathematics, & machine learning and take pleasure in applying theories from these fields to my projects. Check out some of my projects on my Github <a href="https://github.com/yuvalofek">here</a>, connect via LinkedIn <a href="www.linkedin.com/in/yuvalofek">here</a>, or send me an email!  There is nothing better than chatting and sharing my work with others :)
+                master’s degree. I love signal processing, mathematics, & machine learning and take pleasure in
+                applying theories from these fields to my projects. Check out some of my projects on my Github <a
+                        href="https://github.com/yuvalofek" target="_blank">here</a>, connect via LinkedIn <a href="www.linkedin.com/in/yuvalofek" target="_blank">here</a>, or send me an email!  There is nothing better than chatting and sharing my work with others :)
               </p>
             </div>
           </div>
