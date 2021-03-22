@@ -10,10 +10,6 @@ Licence under Creative Commons Attribution 3.0
 
 /* Reset
 ---------------------------------*/
-ul {
-    list-style: none;
-}
-
 .figure {
     margin: 0px;
 }
@@ -442,7 +438,7 @@ p {
     background: #ed4194e0;
     position: relative; 
     background: url('../img/main2.jpg') no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .hero_section {
@@ -638,7 +634,6 @@ section.white {
     background: white;
     color: black
     font-family: sans-serif;
-    text-align: center;
     line-height: 30px;
 }
 .white ul {
@@ -1368,7 +1363,7 @@ transition: all .3s;
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #289673d6;
+    background: red;
     border-radius: 3px;
     color: #ccc;
     font-size: 16px;
@@ -1547,29 +1542,27 @@ transition: all .3s;
     margin: 0 0 60px;
     text-align: center;
 }
+
+#intro ul {
+    list-style: none
+}
+
 #music2dance{
     padding:80px 0 60px;
     text-align: left
 }
 #DR_explained{
     padding:80px 0 60px;
-    text-align: left
-}
-#contributions{
-    text-align: left
-}
-
-#contributions h4 {
-    text-align: left
 }
 
 #contributions ul {
     list-style-type: circle
     list-style-position: outside
     text-align: left
-    list-style-color: black
 }
-
+#contributions h4 {
+    text-align: left
+}
 
  .progress {
   height: 20px;
