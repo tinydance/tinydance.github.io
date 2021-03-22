@@ -643,6 +643,7 @@ section.white_box {
 }
 .white_box ul {
     line-height: 40px;
+    color: black
 }
 .white_box h4 {
     color: black;
@@ -1442,8 +1443,6 @@ transition: all .3s;
 
 /*new_profolio*/
 
-
-
 	
 /* Portfolio */	
 	
@@ -1454,7 +1453,6 @@ transition: all .3s;
 #portfolio {
     padding: 60px 0 40px;
 }
-
 
 
 /* Portfolio Filters */	
@@ -1520,9 +1518,30 @@ transition: all .3s;
     margin: 0 0 60px;
     text-align: center;
 }
-#techSkills{
-padding:80px 0 60px;
+#music2dance{
+    padding:80px 0 60px;
+    text-align: left
 }
+#DR_explained{
+    padding:80px 0 60px;
+    text-align: left
+}
+#contributions{
+    text-align: left
+}
+
+#contributions h4 {
+    text-align: left
+}
+
+#contributions ul {
+    list-style-type: circle
+    list-style-position: outside
+    text-align: left
+    list-style-color: black
+}
+
+
  .progress {
   height: 20px;
   margin-bottom: 20px;
