@@ -633,7 +633,7 @@ div#main-nav {
     margin: 0 0 35px 0; 
 }
 /* white box*/
-section.white_box {
+section.white {
     padding: 60px 0px;
     background: white;
     color: black
@@ -641,23 +641,46 @@ section.white_box {
     text-align: center;
     line-height: 30px;
 }
-.white_box ul {
+.white ul {
     line-height: 40px;
     color: black
 }
-.white_box h4 {
+.white h4 {
     color: black;
     font-family: sans-serif;
     text-align: center;
     line-height: 30px;
 }
-
-.white_box p {
+.white p {
     color: black;
     font-family: sans-serif;
     line-height: 30px;
 }
-
+/* grey box*/
+section.grey {
+    padding: 60px 0px;
+    background: #696969;
+    color: white
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+.grey ul {
+    line-height: 40px;
+    color: white
+}
+.grey h2 {
+    color: white
+}
+.grey h4 {
+    text-align: center;
+    line-height: 30px;
+    color: white
+}
+.grey p {
+    line-height: 30px;
+    color: white
+}
 
 
 /* Latest Work
@@ -1366,7 +1389,7 @@ transition: all .3s;
 ---------------------------------*/
 
 .footer_wrapper {
-    background: #299b88d2;
+    background: black;
 }
 
 .footer_bottom {
