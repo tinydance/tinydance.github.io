@@ -652,6 +652,12 @@ section.white_box {
     line-height: 30px;
 }
 
+.white_box p {
+    color: black;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
 
 
 /* Latest Work
