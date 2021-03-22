@@ -10,10 +10,6 @@ Licence under Creative Commons Attribution 3.0
 
 /* Reset
 ---------------------------------*/
-ul {
-    list-style: none;
-}
-
 .figure {
     margin: 0px;
 }
@@ -442,7 +438,7 @@ p {
     background: #ed4194e0;
     position: relative; 
     background: url('../img/main2.jpg') no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .hero_section {
@@ -633,24 +629,53 @@ div#main-nav {
     margin: 0 0 35px 0; 
 }
 /* white box*/
-section.white_box {
+section.white {
     padding: 60px 0px;
     background: white;
     color: black
     font-family: sans-serif;
-    text-align: center;
     line-height: 30px;
 }
-.white_box ul {
+.white ul {
     line-height: 40px;
+    color: black
 }
-.white_box h4 {
+.white h4 {
     color: black;
     font-family: sans-serif;
     text-align: center;
     line-height: 30px;
 }
-
+.white p {
+    color: black;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+/* grey box*/
+section.grey {
+    padding: 60px 0px;
+    background: #696969;
+    color: white
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+.grey ul {
+    line-height: 40px;
+    color: white
+}
+.grey h2 {
+    color: white
+}
+.grey h4 {
+    text-align: center;
+    line-height: 30px;
+    color: white
+}
+.grey p {
+    line-height: 30px;
+    color: white
+}
 
 
 /* Latest Work
@@ -1338,7 +1363,7 @@ transition: all .3s;
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #289673d6;
+    background: red;
     border-radius: 3px;
     color: #ccc;
     font-size: 16px;
@@ -1359,7 +1384,7 @@ transition: all .3s;
 ---------------------------------*/
 
 .footer_wrapper {
-    background: #299b88d2;
+    background: black;
 }
 
 .footer_bottom {
@@ -1442,8 +1467,6 @@ transition: all .3s;
 
 /*new_profolio*/
 
-
-
 	
 /* Portfolio */	
 	
@@ -1454,7 +1477,6 @@ transition: all .3s;
 #portfolio {
     padding: 60px 0 40px;
 }
-
 
 
 /* Portfolio Filters */	
@@ -1520,9 +1542,28 @@ transition: all .3s;
     margin: 0 0 60px;
     text-align: center;
 }
-#techSkills{
-padding:80px 0 60px;
+
+#intro ul {
+    list-style: none
 }
+
+#music2dance{
+    padding:80px 0 60px;
+    text-align: left
+}
+#DR_explained{
+    padding:80px 0 60px;
+}
+
+#contributions ul {
+    list-style-type: circle
+    list-style-position: outside
+    text-align: left
+}
+#contributions h4 {
+    text-align: left
+}
+
  .progress {
   height: 20px;
   margin-bottom: 20px;
