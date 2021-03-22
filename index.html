@@ -50,19 +50,19 @@
 </head>
 
 <body>
+  <!--Header_section-->
   <header id="header">
     <div id="head" class="parallax" parallax-speed="2" style="background-position: 50% 0px;">
-
       <div class="top_left_cont zoomIn wow animated" id="logo">
         <img src="img/DanceMuse.svg" alt="Dance Muse" class="dancemuse">
         <h2><strong>Inspiring Choreography Through AI</strong>
         </h2>
       </div>
     </div>
-
   </header>
-
   <!--Header_section-->
+
+  <!--navigation_bar-->
   <header id="header_wrapper">
     <div class="container">
       <div class="header_box">
@@ -77,8 +77,9 @@
             <ul class="nav navbar-nav" id="mainNav">
               <li class="active"><a href="#header" class="scroll-link">Home</a></li>
               <li><a href="#intro" class="scroll-link">Introduction</a></li>
-              <li><a href="#service" class="scroll-link">Project Overview</a></li>
-              <li><a href="#Portfolio" class="scroll-link">Media</a></li>
+              <li><a href="#service" class="scroll-link">Overview</a></li>
+              <li><a href="#contributions" class="scroll-link">Contributions</a></li>
+              <li><a href="#Portfolio" class="scroll-link">Models</a></li>
               <li><a href="#experience" class="scroll-link">Experience</a></li>
               <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
               <li><a href="#contact" class="scroll-link">Contact</a></li>
@@ -88,34 +89,33 @@
       </div>
     </div>
   </header>
-  <!--Header_section-->
+  <!--navigation_bar-->
+
   <!--Introduction-->
-  <section class="white_box" id="intro">
+  <section class="white" id="intro">
     <div class="container">
       <div class="row">
         <h4>As machine learning practitioners explore new ways to create art, introducing these innovations to
-          the art community becomes essential. Our project aims to do just that: <I>make it easy for choreographers and
-            dancers to use machine learning models that create dance from music.</I>
+          the art community becomes essential. Our work aims to do just that: <I>make it easy for choreographers and
+            dancers to work with machine learning models to create new dance.</I>
         </h4>
         <img src="img/intersection.svg" alt="DanceMuse is the union of choreography and machine learning" class="intersection">
-        <h4><b>New artificial intelligence (AI) research is finding its way into an unexpected part of society: dance</b></h4>
-        <h4>It comes as no surprise that computers are deeply involved in art. Photographers have been using computers
+        <p><b>New artificial intelligence (AI) research is finding its way into an unexpected part of society: dance</b></p>
+        <p>It comes as no surprise that computers are deeply involved in art. Photographers have been using computers
           to edit their work for ages, digital designers focus on creating art intended to be enjoyed on computers, and
           singers use computers to modify and enhance their voices. Up until now, however, choreographers have been using
-          computers solely for gaining inspiration, sharing their work, and possibly for arranging music.</h4>
-        <h4>Machine learning (ML) breaks us out of this box. Where before choreographers and dancers could only look
+          computers solely for gaining inspiration, sharing their work, and possibly for arranging music.</p>
+        <p>Machine learning (ML) breaks us out of this box. Where before choreographers and dancers could only look
           at videos and physically try out how different moves would look, ML now enables us to do much much more. It
-          opens us to a new world of possibilities and allows us to ask questions we never dared ask before: </h4>
-        <h4>
-          <ul>
-            <li>How would Michael Jackson dance to today’s music? </li>
-            <li> What would a J-pop dance look like if choreographed to the sounds of the NY subway? </li>
-            <li>What genre of dance lies between ballet and hip-hop? How does it look like?</li>
-            <li>How would a ballet dance look like if it was choreographed to a song by The Weeknd? </li>
-            <li>Can we make a dance based on cartoons?</li>
-            <li><span>&#8942;</span></li>
-          </ul>
-        </h4>
+          opens us to a new world of possibilities and allows us to ask questions we never dared ask before: </p>
+        <ul>
+          <li>How would Michael Jackson dance to today’s music? </li>
+          <li> What would a J-pop dance look like if choreographed to the sounds of the NY subway? </li>
+          <li>What genre of dance lies between ballet and hip-hop? How does it look like?</li>
+          <li>How would a ballet dance look like if it was choreographed to a song by The Weeknd? </li>
+          <li>Can we make a dance based on cartoons?</li>
+          <li><span>&#8942;</span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -125,7 +125,7 @@
   <section id="service">
     <div class="container">
 
-      <h2>Project Overview</h2>
+      <h2>Overview</h2>
       <div class="service_wrapper" , style="text-align:center">
         <div class="row" , style="text-align:center">
           <div class="col-md-4">
@@ -162,7 +162,7 @@
   <!--Service-->
 
   <!--Music to Dance-->
-  <section id="techSkills">
+  <section class="white" id="music2dance">
     <div class="container">
       <div class="row">
         <h2>Music to Dance - An Overview</h2>
@@ -184,11 +184,11 @@
   <!--Music to Dance-->
   <hr style="height:2px;border-width:0;color:gray;background-color:gray;width:80%">
   <!--DR_Explained-->
-  <section id="DR_explained">
+  <section class="white" id="DR_explained">
     <div class="container">
       <div class="row">
         <h2 style="padding-top: 20px;">Deep Learning for Generating Dance</h2>
-        <p>Our project builds off a pre-developed machine learning model named DanceRevolution (paper <a
+        <p>Our work builds off a pre-developed machine learning model named DanceRevolution (paper <a
                 href="https://arxiv.org/abs/2006.06119" target="_blank">here</a>) as the basis for our system. DanceRevolution uses an
           encoder-decoder architecture; at a high level, the encoder learns to 'store' music information in a lower
           dimensional space, and the decoder learns a mapping from the encoded coordinates into dance positions.</p>
@@ -225,6 +225,40 @@
     </div>
   </section>
   <!--DR_Explained-->
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray;width:80%">
+  <!--User experience-->
+  <section class="white" id="user_experience">
+    <div class="container">
+      <div class="row">
+        <h2>User Experience</h2>
+        <p>Our current work has been to create a simple command-line based tool to train and run models. The end goal,
+        however, has always been to create a web-based interface where people can upload audio clips and have the model
+        generate dances for them. </p>
+      </div>
+    </div>
+  </section>
+  <!--User experience-->
+  <section class="grey" id="contributions">
+    <div class="container">
+      <div class="row">
+        <h2>Our Contributions</h2>
+        <p>Our work makes music to dance generation models accessible to a wider audience than ever before by easing
+          their use and creating templates for some of their possible uses.</p>
+        <h4>In a few words, our work so far has been focused on:</h4>
+        <ul>
+          <li>Debugging model preprocessing</li>
+          <li>Streamlining preprocessing and testing processes</li>
+          <li>Implementing model fine-tuning to reduce training time</li>
+          <li>Training a set of pre-trained models to supplement fine-tuning feature and reduce the need to fully
+            train models</li>
+          <li>Creating a simple command-line tool to perform all aspects of the dance-generating process (preprocessing,
+            training, and testing)</li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--User experience-->
 
   <!-- Portfolio -->
   <section id="Portfolio" class="content">
@@ -234,8 +268,8 @@
 
       <!-- Title -->
       <div class="section-title">
-        <h2>Photos</h2>
-        <h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+        <h2>Trained models</h2>
+        <h6>In works... No models available at this time</h6>
 
       </div>
       <!--/Title -->
@@ -492,8 +526,10 @@
               <h3>Yuval Epstain Ofek</h3>
               <p>I am a senior electrical engineering student at the Cooper Union concurrently working towards a
                 master’s degree. I love signal processing, mathematics, & machine learning and take pleasure in
-                applying theories from these fields to my projects. Check out some of my projects on my Github <a
-                        href="https://github.com/yuvalofek" target="_blank">here</a>, connect via LinkedIn <a href="www.linkedin.com/in/yuvalofek" target="_blank">here</a>, or send me an email!  There is nothing better than chatting and sharing my work with others :)
+                applying theories from these fields to my projects. Check out some of my projects on my Github
+                <a href="https://github.com/yuvalofek" target="_blank">here</a>, connect via LinkedIn
+                <a href="www.linkedin.com/in/yuvalofek" target="_blank">here</a>, or send me an email!  There is nothing
+                better than chatting and sharing my work with others :)
               </p>
             </div>
           </div>
