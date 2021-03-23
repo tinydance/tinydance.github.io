@@ -19,6 +19,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
@@ -274,6 +275,9 @@
 }
 .fa-volume-off:before {
   content: "\f026";
+}
+.fa-computer-classic:before {
+  content: "\f8b1";
 }
 .fa-volume-down:before {
   content: "\f027";
@@ -1270,6 +1274,9 @@
 }
 .fa-archive:before {
   content: "\f187";
+}
+.fa-microchip:before{
+  content: "\f2db";
 }
 .fa-bug:before {
   content: "\f188";
