@@ -1,6 +1,7 @@
 body {
     font-family: 'Avenir';
     font-weight: 800;
+    color: rgb(51, 49, 49)
 }
 #scroll-container {
     overflow: hidden;

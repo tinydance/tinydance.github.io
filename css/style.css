@@ -551,9 +551,6 @@ div#main-nav {
 }
 
 
-
-
-
 /* Services
 ---------------------------------*/
 
@@ -615,7 +612,7 @@ div#main-nav {
 
 .service_block h3 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 25px;
     color: #fff;
     margin: 35px 0 15px;
@@ -627,36 +624,50 @@ div#main-nav {
     font-size: 16px;
     color: #fff;
     margin: 0 0 35px 0; 
+    font-weight: normal;
 }
 /* white box*/
 section.white {
     padding: 60px 0px;
     background: white;
-    color: black
+    color: rgb(51, 49, 49);
     font-family: sans-serif;
     line-height: 30px;
 }
 .white ul {
     line-height: 40px;
-    color: black
+    color: rgb(51, 49, 49)
 }
 .white h4 {
-    color: black;
+    color: rgb(51, 49, 49);
     font-family: sans-serif;
     text-align: center;
     line-height: 30px;
 }
-.white p {
-    color: black;
-    font-family: sans-serif;
+
+.white h3 {
+    color: rgb(69, 66, 66);
+    font-family: 'Gill Sans', 'sans-serif';
+    text-align: center;
     line-height: 30px;
+    font-weight: 50px;
+}
+
+.white p {
+    color:rgb(51, 49, 49);
+    font-family: 'Gill Sans', 'sans-serif';
+    line-height: 25px;
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 2fr;
+
 }
 /* grey box*/
 section.grey {
     padding: 60px 0px;
     background: #696969;
-    color: white
-    font-family: sans-serif;
+    color: white;
+    font-family: 'Gill Sans', 'sans-serif';
     text-align: left;
     line-height: 30px;
 }
@@ -670,11 +681,25 @@ section.grey {
 .grey h4 {
     text-align: center;
     line-height: 30px;
-    color: white
+    color: white;
+    font-family: 'Gill Sans', 'sans-serif';
+    font-size: 20px;
+    font-weight:normal;
 }
 .grey p {
+    line-height: 15px;
+    color: rgb(186, 175, 175);
+    font-family: 'Gill Sans', 'sans-serif';
+    font-size: 20px;
+    font-weight:normal;
+}
+
+.grey li{
     line-height: 30px;
-    color: white
+    color: white;
+    font-family: 'Gill Sans', 'sans-serif';
+    font-size: 18px;
+    font-weight:normal;  
 }
 
 
@@ -1531,6 +1556,15 @@ transition: all .3s;
     margin: 0 0 15px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.section-title h6 {
+    color: #343333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin: 0 0 15px;
+    text-align: center;
 }
 
 .section-title span {
