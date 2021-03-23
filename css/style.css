@@ -652,7 +652,14 @@ section.white {
     line-height: 30px;
     font-weight: 50px;
 }
-
+.white h5{
+    padding-top: 2fr;
+    color:rgb(93, 79, 79);
+    font-family: 'Gill Sans', 'sans-serif';
+    line-height: 30px;
+    font-weight: 50px;
+    font-size: 20px;
+}
 .white p {
     color:rgb(51, 49, 49);
     font-family: 'Gill Sans', 'sans-serif';

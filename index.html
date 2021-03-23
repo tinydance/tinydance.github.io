@@ -245,12 +245,6 @@
           poster='https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 1x, https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 2x'>
           <source src="img/ballet-dance.mp4" type='video/mp4' />
         </video>
-        <div class="videoItem__overlay">
-          <div class="videoItem__desc">
-            <h2 class="videoItem__desc-title">Sample Dance</h2>
-            <p>This is a sample dance</p>
-          </div>
-        </div>
       </article>
     
       <article class="videoItem">
@@ -259,12 +253,6 @@
           poster='https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 1x, https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 2x' >
           <source src="img/output.mp4" type='video/mp4' />
         </video>
-        <div class="videoItem__overlay">
-          <div class="videoItem__desc">
-            <h2 class="videoItem__desc-title">OpenPose</h2>
-            <p>Ballet dance openpose output</p>
-          </div>
-        </div>
       </article>
     </div>
   </section>
@@ -309,11 +297,33 @@
           regressively predicted sub-sequences, which increase in length over the course of training to gradually
           minimize exposure bias. This strategy allows for longer length dance generation, compared to older models
           whose output would freeze after a few seconds.</p>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray;width:100%">
+          <h5>
+            Below are the outputs of a model trained on a ballet dataset after differing numbers of epochs when tested on new music. The leftmost video is produced by a model trained over 2,000 epochs, and as evident in the jitteriness and lack of correspondence between the beat and the moves, this model does not have the sufficient capacity to generate realistic dance to the test music. The center video is produced by a model trained over 6,000 epochs. The movements of the key joints are noticeably smoother and more expressive, and the choreography better matches the music. The rightmost video is produced by a model trained over 10,000 epochs. It resembles the under-trained model in its jitteriness, in addition to its repeating of the same spinning move. The regression of the model output after the additional 4,000 epochs likely indicates overfitting, where training has caused the model to fit too closely to the training dataset and limits its capacity to generalize to new music.
+            </h5>
       </div>
     </div>
   </section>
+
+  <div class="center">
+    <button id="stop">Stop All Videos</button>
+  </div>
+  
+  <div class="wrapper">
+    <div class="box">
+      <div id="player1"></div>
+    </div>
+    <div class="box">
+      <div id="player2"></div>
+    </div>
+    <div class="box">
+      <div id="player3"></div>
+    </div>
+  </div>
+  </div>
+
   <!--DR_Explained-->
-  <hr style="height:2px;border-width:0;color:gray;background-color:gray;width:80%">
+ 
   <!--User experience-->
   <section class="white" id="user_experience">
     <div class="container">
@@ -328,6 +338,7 @@
       </div>
     </div>
   </section>
+
   <!--User experience-->
   <section class="grey" id="contributions">
     <div class="container">
@@ -360,8 +371,7 @@
       <!-- Title -->
       <div class="section-title">
         <h2>Trained models</h2>
-        <h6>In works... Models will be updated all the time :)</h6>
-
+        <h6>In works... Come back anytime to check out for new outputs  :)</h6>
       </div>
       <!--/Title -->
 
@@ -382,10 +392,7 @@
               <h5>Designing</h5>
             </a></li>
           <li><a class="" href="#" data-filter=".wildlife">
-              <h5>Development</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".citylife">
-              <h5>Web App</h5>
+              <h5>Progress</h5>
             </a></li>
           <li><a class="" href="#" data-filter=".animals">
               <h5>Sample Model</h5>
@@ -403,12 +410,12 @@
           class="portfolio-item one-four   animals isotope-item effect-oscar">
 
           <div class="portfolio_img">
-            <img src="img/sample_gif.gif" alt="Portfolio 1">
+            <img src="img/ballet-sample.gif" alt="Portfolio 1">
           </div>
           <figcaption>
             <div>
-              <a href="img/sample_gif.gif" class="fancybox">
-                <h2>Model<span>Output</span></h2>
+              <a href="img/ballet-sample.gif" class="fancybox">
+                <h2>Ballet<span>Output</span></h2>
                 <p>This is an exmample of the DanceRevolution Model</p>
               </a>
             </div>
@@ -419,14 +426,14 @@
         <!-- Portfolio Item-->
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; height: 270px; opacity: 1;"
-          class="portfolio-item one-four  wildlife isotope-item effect-oscar">
+          class="portfolio-item one-four  animals isotope-item effect-oscar">
           <div class="portfolio_img">
             <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
           </div>
           <figcaption>
             <div>
-              <a data-fancybox data-width="337" data-height="270", href = "https://www.youtube.com/watch?v=4FZrE3cmTPA">
-                <h2>Ballet <span>Output</span></h2>
+              <a data-fancybox data-width="337" data-height="270", href = "https://www.youtube.com/watch?v=f1DEr78yDTk&feature=youtu.be">
+                <h2>Jpop <span>Output</span></h2>
                 <p>This is the video of the dance output</p>
               </a>
               <!--
@@ -439,10 +446,10 @@
         </figure>
         <!--/Portfolio Item -->
 
-        <!-- Portfolio Item -->
+        <!-- Portfolio Item
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  wildlife  isotope-item effect-oscar">
+          class="portfolio-item one-four  animals  isotope-item effect-oscar">
           <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
           <figcaption>
             <div>
@@ -453,18 +460,19 @@
             </div>
           </figcaption>
         </figure>
+       -->
         <!--/Portfolio Item-->
 
         <!-- Portfolio Item-->
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  citylife  nature web isotope-item effect-oscar">
-          <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
+          class="portfolio-item one-four  wildlife web isotope-item effect-oscar">
+          <div class="portfolio_img"> <img src="img/fifthposition.gif" alt="Portfolio 1"> </div>
           <figcaption>
             <div>
-              <a href="img/portfolio_pic4.jpg" class="fancybox">
-                <h2>Warm <span>Oscar</span></h2>
-                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+              <a href="img/fifthposition.gif" class="fancybox">
+                <h2>Hiphop <span>Model2</span></h2>
+                <p>This is another example of hiphop dance using our model</p>
               </a>
             </div>
           </figcaption>
@@ -475,19 +483,19 @@
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
           class="portfolio-item one-four  wildlife isotope-item effect-oscar">
-          <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+          <div class="portfolio_img"> <img src="img/jittery_hiphop.gif" alt="Portfolio 1"> </div>
           <figcaption>
             <div>
-              <a href="img/portfolio_pic5.jpg" class="fancybox">
-                <h2>Warm <span>Oscar</span></h2>
-                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+              <a href="img/jittery_hiphop.gif" class="fancybox">
+                <h2>Hiphop <span>Model</span></h2>
+                <p>This is a gif for the Hiphop dance</p>
               </a>
             </div>
           </figcaption>
         </figure>
         <!--/Portfolio Item -->
 
-        <!-- Portfolio Item -->
+        <!-- Portfolio Item 
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
           class="portfolio-item one-four  web isotope-item effect-oscar">
@@ -501,9 +509,10 @@
             </div>
           </figcaption>
         </figure>
+        -->
         <!--/Portfolio Item -->
 
-        <!-- Portfolio Item  -->
+        <!-- Portfolio Item  
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
           class="portfolio-item one-four  wildlife web isotope-item effect-oscar">
@@ -517,9 +526,10 @@
             </div>
           </figcaption>
         </figure>
+        -->
         <!--/Portfolio Item -->
 
-        <!-- Portfolio Item -->
+        <!-- Portfolio Item 
         <figure
           style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
           class="portfolio-item one-four   citylife isotope-item effect-oscar">
@@ -533,6 +543,7 @@
             </div>
           </figcaption>
         </figure>
+        -->
         <!--/Portfolio Item -->
 
       </div>
@@ -840,7 +851,65 @@ const TEXTBOX_CONTROLLER = (function() {
 PLAYER_CONTROLLER.init();
 TEXTBOX_CONTROLLER.init();
 </script>
+<script>
+  var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+var playerInfoList = [{
+  id: 'player1',
+  videoId: 'bIrRWogx-R0'
+}, {
+  id: 'player2',
+  videoId: 'JYC6T4MiOoQ'
+}, {
+  id: 'player3',
+  videoId: '6MqXzvjQ4Ho'
+}, ];
+
+function onYouTubeIframeAPIReady() {
+  if (typeof playerInfoList === 'undefined') return;
+
+  for (var i = 0; i < playerInfoList.length; i++) {
+    var curplayer = createPlayer(playerInfoList[i]);
+    players[i] = curplayer;
+  }
+  
+  var links = document.querySelectorAll('.play_video');
+  links.forEach(function (e) {    
+    $(e).on('click', function(e) {
+      stopAllVideos();
+      var i = $(this).data('index');
+      players[i].playVideo();
+    })
+  });
+}
+
+var players = new Array();
+
+function createPlayer(playerInfo) {
+  return new YT.Player(playerInfo.id, {
+    videoId: playerInfo.videoId,
+    playerVars: {
+      showinfo: 0,
+    }
+  }); 
+}
+
+function stopAllVideos() {
+  players.forEach(function (el) {
+    el.stopVideo();
+  });
+}
+
+$('#stop').click(function () {
+  console.log("players", players);
+  players.forEach(function (el) {
+    el.stopVideo();
+  });
+});
+  </script>
 </body>
 
 </html>
