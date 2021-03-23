@@ -11,6 +11,8 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
   <link href="css/animate.css" rel="stylesheet" type="text/css">
+  <link href="css/scroll.css" rel="stylesheet" type="text/css">
+  <link rel='stylesheet' href='https://unpkg.com/video.js@7/dist/video-js.min.css'>
   <style>
     #more {
       display: none;
@@ -47,6 +49,7 @@
       background: #5c1b1b;
     }
     </style>
+
 </head>
 
 <body>
@@ -108,9 +111,9 @@
         </div>
       </div>
         <h4>Machine learning (ML) breaks us out of this box. Where before choreographers and dancers could only look
-          at videos and physically try out how different moves would look, ML now enables us to do much much more. It
-          opens us to a new world of possibilities and allows us to ask questions we never dared ask before: </h4>
-        <h4>
+          at videos and physically try out how different moves would look, ML now enables us to do much much more.</h4>
+        <!--
+          <h4>
           <ul>
             <li>How would Michael Jackson dance to today’s music? </li>
             <li> What would a J-pop dance look like if choreographed to the sounds of the NY subway? </li>
@@ -120,7 +123,57 @@
             <li><span>&#8942;</span></li>
           </ul>
         </h4>
-    </div>
+        -->
+      </div>
+      <h4>It opens us to a new world of possibilities and allows us to ask questions we never dared ask before: </h4>
+        <div id="scroll-container">
+          <div class="wrap-container" id="wrap-scroll">
+            <ul id="ul-scroll">
+              <li class="active">
+                <span class="item">
+                  How would Michael Jackson dance to today’s music? 
+                </span>
+              </li>
+              <li>
+                <span class="item">
+                  What would a J-pop dance look like if choreographed to the sounds of the NY subway?
+                </span>
+              </li>
+              <li>
+                <span class="item">
+                  What genre of dance lies between ballet and hip-hop? How does it look like?
+                </span>
+              </li>
+              <li>
+                <span class="item">
+                  How would a ballet dance look like if it was choreographed to a song by The Weeknd?
+                </span>
+              </li>
+              <li>
+                <span class="item">
+                  Can we make a dance based on cartoons?
+                </span>
+              </li>
+              <li>
+                <span class="item">
+                  More and more questions to come ...
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <svg>
+          <defs>
+            <linearGradient id="gradient" x1="0" y1="0%" x2 ="0" y2="50%">
+              <stop stop-color="black" offset="0"/>
+              <stop stop-color="white" offset="1"/>
+            </linearGradient>
+        
+            <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+              <rect y="0" width="1" height="1" fill="url(#gradient)" />
+            </mask>
+          </defs>
+        </svg>
   </section>
   <!--Introduction-->
 
@@ -128,12 +181,12 @@
   <section id="service">
     <div class="container">
 
-      <h2>Overview</h2>
+      <h2>Project Overview</h2>
       <div class="service_wrapper" , style="text-align:center">
         <div class="row" , style="text-align:center">
           <div class="col-md-4">
             <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i
-                    class="fa fa-crosshairs"></i></span> </div>
+                    class="fa fa-archive"></i></span> </div>
             <div class="service_block">
               <h3 class="animated fadeInUp wow">Dataset Collection</h3>
               <p class="animated fadeInDown wow">Compile unique datasets embodying various dance styles, genres of music,
@@ -142,7 +195,7 @@
           </div>
           <div class="col-md-4">
             <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i
-                    class="fa fa-building-o"></i></span> </div>
+                    class="fa fa-book"></i></span> </div>
             <div class="service_block">
               <h3 class="animated fadeInUp wow">Backend Computing</h3>
               <p class="animated fadeInDown wow">Adapt and deploy a state-of-the-art dance generation model to create
@@ -150,7 +203,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-tree"></i></span> </div>
+            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-male"></i></span> </div>
             <div class="service_block">
               <h3 class="animated fadeInUp wow">User Experience</h3>
               <p class="animated fadeInDown wow">Streamline user interaction with the model so that non-experts can
@@ -183,7 +236,38 @@
           artist.</p>
       </div>
     </div>
+    <div class="videoContainer">
+      <article class="videoItem">
+        <video 
+          class="video-js vjs-default-skin"
+          poster='https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 1x, https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 2x'>
+          <source src="img/ballet-dance.mp4" type='video/mp4' />
+        </video>
+        <div class="videoItem__overlay">
+          <div class="videoItem__desc">
+            <h2 class="videoItem__desc-title">Sample Dance</h2>
+            <p>This is a sample dance</p>
+          </div>
+        </div>
+      </article>
+    
+      <article class="videoItem">
+        <video 
+          class="video-js vjs-default-skin"
+          poster='https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 1x, https://images.pexels.com/videos/4841980/pexels-photo-4841980.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500 2x' >
+          <source src="img/output.mp4" type='video/mp4' />
+        </video>
+        <div class="videoItem__overlay">
+          <div class="videoItem__desc">
+            <h2 class="videoItem__desc-title">OpenPose</h2>
+            <p>Ballet dance openpose output</p>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
+ 
+
   <!--Music to Dance-->
   <hr style="height:2px;border-width:0;color:gray;background-color:gray;width:80%">
   <!--DR_Explained-->
@@ -300,7 +384,7 @@
               <h5>Web App</h5>
             </a></li>
           <li><a class="" href="#" data-filter=".animals">
-              <h5>Mobile App</h5>
+              <h5>Sample Model</h5>
             </a></li>
         </ul>
       </div>
@@ -311,17 +395,17 @@
         id="portfolio_wrapper">
         <!-- Portfolio Item -->
         <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+          style="position: relative; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; height: 270px; opacity: 1;"
           class="portfolio-item one-four   animals isotope-item effect-oscar">
 
           <div class="portfolio_img">
-            <img src="img/portfolio_pic1.jpg" alt="Portfolio 1">
+            <img src="img/sample_gif.gif" alt="Portfolio 1">
           </div>
           <figcaption>
             <div>
-              <a href="img/portfolio_pic1.jpg" class="fancybox">
-                <h2>Warm <span>Oscar</span></h2>
-                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+              <a href="img/sample_gif.gif" class="fancybox">
+                <h2>Model<span>Output</span></h2>
+                <p>This is an exmample of the DanceRevolution Model</p>
               </a>
             </div>
           </figcaption>
@@ -330,15 +414,22 @@
 
         <!-- Portfolio Item-->
         <figure
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+          style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; height: 270px; opacity: 1;"
           class="portfolio-item one-four  wildlife isotope-item effect-oscar">
-          <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+          <div class="portfolio_img">
+            <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+          </div>
           <figcaption>
             <div>
-              <a href="img/portfolio_pic2.jpg" class="fancybox">
-                <h2>Warm <span>Oscar</span></h2>
-                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+              <a data-fancybox data-width="337" data-height="270", href = "https://www.youtube.com/watch?v=4FZrE3cmTPA">
+                <h2>Ballet <span>Output</span></h2>
+                <p>This is the video of the dance output</p>
               </a>
+              <!--
+              <video width="337" height="270" controls>
+                <source src="img/0004_01_with_audio_epoch1990.mp4" type="video/mp4">
+                  </video>
+               -->
             </div>
           </figcaption>
         </figure>
@@ -598,24 +689,146 @@
   <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
-  <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video.min.js'></script>
+<script>
+var scrollW = document.getElementById("wrap-scroll");
+var scrollUl = document.getElementById("ul-scroll");
+var itemsScrolled,
+    itemsMax,
+    cloned = false;
 
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
+var listOpts = {
+  itemCount: null,
+  itemHeight: null,
+  items: [],
+};
 
+function scrollWrap () {
+  
+  itemsScrolled = Math.ceil( (this.scrollTop + listOpts.itemHeight / 2 ) / listOpts.itemHeight);
+ 
+  if (this.scrollTop < 1) {
+    itemsScrolled = 0;
+  }
+     
+  listOpts.items.forEach(function (ele) {
+    ele.classList.remove("active");
+  })
+  
+  if (itemsScrolled < listOpts.items.length) {
+    listOpts.items[itemsScrolled].classList.add("active");
+  }
+  
+  if (itemsScrolled > listOpts.items.length - 3) {
+    
+    var node;
+    for ( _x = 0; _x <= itemsMax - 1; _x++ ) {
       
-    } </script>
+      node = listOpts.items[_x];
+      
+      if ( !cloned ) {
+        node = listOpts.items[_x].cloneNode(true);
+      }
+            
+      scrollUl.appendChild(node);
+    }
+    
+    initItems(cloned);
+    cloned = true; 
+    itemsScrolled = 0;
+    
+  }
+}
+
+function initItems (scrollSmooth) {
+  
+  listOpts.items = [].slice.call(scrollUl.querySelectorAll("li"));
+  listOpts.itemHeight = listOpts.items[0].clientHeight;
+  listOpts.itemCount = listOpts.items.length;
+  
+  if (!itemsMax) {
+    itemsMax = listOpts.itemCount;
+  }
+  
+  if (scrollSmooth) {
+    var seamLessScrollPoint = ((itemsMax - 3) * listOpts.itemHeight);
+    scrollW.scrollTop = seamLessScrollPoint;
+  }      
+  
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  initItems();
+  scrollW.onscroll = scrollWrap;
+});
+</script>
+<script id= "rendered-js">
+  const PLAYER_CONTROLLER = (function() {
+  const DOM = {
+    videoItemArr: document.querySelectorAll(".video-js"),
+  }
+  
+  const VID_WIDTH = 500;
+  const VID_HEIGHT = 889;
+  
+  const PLAYER_CONFIG = {
+    aspectRatio: `${VID_WIDTH}:${VID_HEIGHT}`,
+    autoplay: true,
+    controls: false,
+    loop: true,
+    muted: true,
+    preload: "auto",  
+  }
+  
+  let setupPlayer = function() {
+    DOM.videoItemArr.forEach(item => {
+      videojs(item, PLAYER_CONFIG)
+    })
+  }
+  
+  return {
+    init() {
+      setupPlayer();
+    }
+  }
+})();
+
+const TEXTBOX_CONTROLLER = (function() {
+  const DOM = {
+    textboxArr: document.querySelectorAll('.videoItem__desc')
+  }
+  
+  let maxHeight;
+  let findMaxHeight = function() {
+    maxHeight = 0;
+    DOM.textboxArr.forEach(box => {
+      console.log(box.offsetHeight);
+      if(box.offsetHeight > maxHeight) maxHeight = box.offsetHeight;
+    })
+    return maxHeight;
+  }
+  
+  let resizeTextbox = function() {
+    const MAX_HEIGHT = findMaxHeight();
+    DOM.textboxArr.forEach(box => box.style.height = MAX_HEIGHT + "px");
+  }
+  
+  let setupEventListener = function () {
+    window.addEventListener('load', resizeTextbox);
+    window.addEventListener('resize', resizeTextbox);
+  }
+  
+  return {
+    init() {
+      setupEventListener();
+    }
+  }
+})();
+
+PLAYER_CONTROLLER.init();
+TEXTBOX_CONTROLLER.init();
+</script>
 
 </body>
 
