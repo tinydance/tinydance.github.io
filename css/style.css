@@ -679,7 +679,7 @@ section.white {
 }
 .white p {
     color:rgb(51, 49, 49);
-    line-height: 25px;
+    line-height: 1.4em;
     font-weight: normal;
     font-size: 18px;
     padding-bottom: 2fr;
@@ -726,10 +726,11 @@ section.grey {
     font-weight:normal;
 }
 .grey p {
-    line-height: 15px;
     color: rgb(186, 175, 175);
     font-size: 20px;
     font-weight:normal;
+    line-height: 1.4em;
+
 }
 
 .grey li{
