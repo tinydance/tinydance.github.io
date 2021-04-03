@@ -712,6 +712,9 @@ section.grey {
     line-height: 40px;
     color: white
 }
+.grey h2 {
+    color: white
+}
 .grey h3 {
     color: white
 }
