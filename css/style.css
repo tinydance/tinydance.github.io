@@ -218,7 +218,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #222222;
     font-size: 18px;
@@ -228,7 +227,6 @@ h3 {
 h6 {
     font-size: 16px;
     color: #888888;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
     margin: 0 0 60px 0;
@@ -282,6 +280,30 @@ p {
   margin-right: auto;
   width: 100%;
 }
+
+/* Stop Button */
+#stop {
+    width: 175px;
+    height: 50px;
+    letter-spacing: 0px;
+    background: rgb(200,0,0) ;
+    border-radius: 3px;
+    color: #ccc;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    margin-bottom: 1em;
+}
+
+#stop:hover {
+    background: #ccc;
+    color: rgb(10, 10, 10);
+}
+
 
 /* Nav Styles
 ---------------------------------*/
@@ -396,7 +418,6 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
 }
 #head .title {
-  font-family: Alice, Georgia, serif;
   font-size: 49px;
   font-size: 3.0625rem;
 }
@@ -478,7 +499,6 @@ height: 650px;
     color: #FFF;
     line-height: 58px;
     margin: 0 0 26px 0;
-    font-family: 'Raleway', sans-serif;
     text-align: center;
     text-transform: capitalize;
 }
@@ -564,7 +584,6 @@ div#main-nav {
 }
 #service h4{
     color: #fff;
-    font-family: sans-serif; 
   }
 .service_wrapper {
     padding: 40px 0 40px;
@@ -626,13 +645,14 @@ div#main-nav {
     margin: 0 0 35px 0; 
     font-weight: normal;
 }
+
 /* white box*/
 section.white {
     padding: 60px 0px;
     background: white;
     color: rgb(51, 49, 49);
-    font-family: sans-serif;
     line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 .white ul {
     line-height: 40px;
@@ -640,14 +660,12 @@ section.white {
 }
 .white h4 {
     color: rgb(51, 49, 49);
-    font-family: sans-serif;
     text-align: center;
     line-height: 30px;
 }
 
 .white h3 {
     color: rgb(69, 66, 66);
-    font-family: 'Gill Sans', 'sans-serif';
     text-align: center;
     line-height: 30px;
     font-weight: 50px;
@@ -655,28 +673,40 @@ section.white {
 .white h5{
     padding-top: 2fr;
     color:rgb(93, 79, 79);
-    font-family: 'Gill Sans', 'sans-serif';
     line-height: 30px;
     font-weight: 50px;
     font-size: 20px;
 }
 .white p {
     color:rgb(51, 49, 49);
-    font-family: 'Gill Sans', 'sans-serif';
-    line-height: 25px;
+    line-height: 1.4em;
     font-weight: normal;
     font-size: 18px;
     padding-bottom: 2fr;
 
 }
+/* black section */
+section.black {
+    padding: 3em 0px;
+    background: black;
+    color: white;
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.black h2 {
+    color: white;
+}
+
 /* grey box*/
 section.grey {
     padding: 60px 0px;
     background: #696969;
     color: white;
-    font-family: 'Gill Sans', 'sans-serif';
     text-align: left;
     line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 .grey ul {
     line-height: 40px;
@@ -685,26 +715,27 @@ section.grey {
 .grey h2 {
     color: white
 }
+.grey h3 {
+    color: white
+}
 .grey h4 {
     text-align: center;
     line-height: 30px;
     color: white;
-    font-family: 'Gill Sans', 'sans-serif';
     font-size: 20px;
     font-weight:normal;
 }
 .grey p {
-    line-height: 15px;
     color: rgb(186, 175, 175);
-    font-family: 'Gill Sans', 'sans-serif';
     font-size: 20px;
     font-weight:normal;
+    line-height: 1.4em;
+
 }
 
 .grey li{
     line-height: 30px;
     color: white;
-    font-family: 'Gill Sans', 'sans-serif';
     font-size: 18px;
     font-weight:normal;  
 }
@@ -1042,7 +1073,6 @@ color: #0A1525;
 .about-us .points:before{
 	content: "\f058";
 	position: absolute;
-	font-family: FontAwesome;
 	font-size: 1.125em;
 	color: #4df75b;
 	left: 0px;

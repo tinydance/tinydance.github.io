@@ -1,5 +1,4 @@
 body {
-    font-family: 'Avenir';
     font-weight: 800;
     color: rgb(51, 49, 49)
 }
@@ -46,7 +45,7 @@ body {
     padding-bottom: 50px;
 }
 .wrap-container ul li.active .item {
-    transform: scale(1.9);
+    transform: scale(1.6);
 }
 .wrap-container ul li .item {
     position: relative;
