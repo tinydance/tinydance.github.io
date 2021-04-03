@@ -296,6 +296,7 @@ p {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    margin-bottom: 1em;
 }
 
 #stop:hover {
@@ -684,6 +685,19 @@ section.white {
     padding-bottom: 2fr;
 
 }
+/* black section */
+section.black {
+    padding: 60px 0px;
+    background: black;
+    color: white;
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.black h2 {
+    color: white;
+}
+
 /* grey box*/
 section.grey {
     padding: 60px 0px;
@@ -698,7 +712,7 @@ section.grey {
     line-height: 40px;
     color: white
 }
-.grey h2 {
+.grey h3 {
     color: white
 }
 .grey h4 {
