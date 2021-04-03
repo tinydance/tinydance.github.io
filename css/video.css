@@ -2,7 +2,7 @@
         
     display: grid;
     grid-template-columns: repeat(2, 2fr) 10px;
-    background-color: #fff;
+    background-color: black;
     }
 .videoContainer h2{
     color:black;

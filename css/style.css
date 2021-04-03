@@ -687,7 +687,7 @@ section.white {
 }
 /* black section */
 section.black {
-    padding: 60px 0px;
+    padding: 3em 0px;
     background: black;
     color: white;
     text-align: left;
