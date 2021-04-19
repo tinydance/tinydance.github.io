@@ -648,10 +648,10 @@ div#main-nav {
 
 /* white box*/
 section.white {
-    padding: 60px 0px;
+    padding: 60px 5rem;
     background: white;
     color: rgb(51, 49, 49);
-    line-height: 30px;
+
     font-family: 'Open Sans', sans-serif;
 }
 .white ul {
@@ -661,19 +661,16 @@ section.white {
 .white h4 {
     color: rgb(51, 49, 49);
     text-align: center;
-    line-height: 30px;
 }
 
 .white h3 {
     color: rgb(69, 66, 66);
     text-align: center;
-    line-height: 30px;
     font-weight: 50px;
 }
 .white h5{
     padding-top: 2fr;
     color:rgb(93, 79, 79);
-    line-height: 30px;
     font-weight: 50px;
     font-size: 20px;
 }
@@ -682,8 +679,15 @@ section.white {
     line-height: 1.4em;
     font-weight: normal;
     font-size: 18px;
-    padding-bottom: 2fr;
-
+}
+.white p,
+.white h5,
+.white h4,
+.white figcaption,
+.white img,
+.white h3 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 /* black section */
 section.black {
@@ -712,9 +716,7 @@ section.grey {
     line-height: 40px;
     color: white
 }
-.grey h2 {
-    color: white
-}
+.grey h2,
 .grey h3 {
     color: white
 }
@@ -739,7 +741,14 @@ section.grey {
     font-size: 18px;
     font-weight:normal;  
 }
-
+.grey p,
+.grey h2,
+.grey ul,
+.grey h4,
+.grey h3 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
 
 /* Latest Work
 ---------------------------------*/
